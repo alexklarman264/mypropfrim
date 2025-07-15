@@ -4,16 +4,17 @@ import { Search, Star, Heart, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
 import { getHeroTopFirms } from '@/data/firms';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
-   const topFirms = getHeroTopFirms();
-    const showComingSoon = () => {
-        toast({
-          title: "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀"
-        });
-      };
-    
-     
+  const topFirms = getHeroTopFirms();
+  const showComingSoon = () => {
+    toast({
+      title: "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀"
+    });
+  };
+
+
 
   return (
     <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
@@ -25,13 +26,12 @@ const HeroSection = () => {
           className="max-w-4xl mx-auto"
         >
           <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight">
-            Find the Best Prop Trading Firms in 2025:{' '}
-            <span className="gradient-text">Verified by My Trusted Prop</span>
+            Get Funded to Trade — Instantly Compare the Top Prop Firms & Save Big:{' '}
+            <span className="gradient-text">Verified by The Trusted Prop</span>
           </h1>
-          
+
           <p className="mt-6 text-lg text-[#B0B0B0] leading-relaxed">
-            Discover trusted prop trading firms with verified reviews, exclusive discounts, and comprehensive comparisons. 
-            Join thousands of traders who trust our platform for safe and profitable funding opportunities.
+            We review and rate the best prop trading firms so you can focus on getting funded — not figuring out the rules.
           </p>
 
         </motion.div>
@@ -43,7 +43,7 @@ const HeroSection = () => {
           className="mt-16 max-w-5xl mx-auto"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8">Top 7 Most Trusted Prop Firms</h2>
-          
+
           <div className="flex flex-col space-y-4">
             {topFirms.slice(0, 7).map((firm, index) => (
               <div key={index} className="glow-border rounded-xl p-4">
@@ -51,7 +51,7 @@ const HeroSection = () => {
                 <div className="block sm:hidden relative">
                   {/* Trusted Badge - Top Right */}
                   <div className="absolute top-2 right-0">
-                    <Button size="sm" className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white text-xs px-3 py-1" onClick={showComingSoon}>
+                    <Button size="sm" className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white text-xs px-3 py-1">
                       TRUSTED
                     </Button>
                   </div>
@@ -59,11 +59,12 @@ const HeroSection = () => {
                   {/* Firm Info Row */}
                   <div className="flex items-start space-x-4 mb-8 pt-2">
                     <div className="relative">
-                      <div className="w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center font-bold text-lg">
-                        {firm.logo}
+                      <div className="w-16 h-16 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
+                        <img src={firm.logo} alt="Logo" className="w-16 h-16 rounded-lg object-contain" />
                       </div>
                       <CheckCircle2 className="absolute -top-2 -right-2 w-5 h-5 text-green-500 fill-green-500 bg-[#0A0A0A] rounded-full" />
                     </div>
+
                     <div className="flex-1 text-left">
                       <h3 className="font-bold text-lg mb-2">
                         {firm.name.map((part, i) => <div key={i}>{part}</div>)}
@@ -103,24 +104,29 @@ const HeroSection = () => {
 
                   {/* Action Buttons */}
                   <div className="flex space-x-2">
-                    <Button variant="outline" className="flex-1 border-[#4A6CF7] text-[#4A6CF7] hover:bg-[#4A6CF7]/10 hover:text-[#6C8CFF] text-sm" onClick={showComingSoon}>
-                      Review
-                    </Button>
-                    <Button className="flex-1 bg-gradient-to-r from-[#4A6CF7] to-[#6C8CFF] hover:opacity-90 text-white text-sm" onClick={showComingSoon}>
+                    <Link to={`/reviews/${firm.slug}`}>
+                      <Button variant="outline" className="flex-1 border-[#4A6CF7] text-[#4A6CF7] hover:bg-[#4A6CF7]/10 hover:text-[#6C8CFF] text-sm">
+                        Review
+                      </Button>
+                    </Link>
+                    <Button
+                      className="flex-1 bg-gradient-to-r from-[#4A6CF7] to-[#6C8CFF] hover:opacity-90 text-white text-sm"
+                      onClick={() => window.open(firm.buyLink, '_blank')}
+                    >
                       Buy Now
                     </Button>
                   </div>
                 </div>
 
-                {/* Desktop Layout - unchanged */}
+                {/* Desktop Layout */}
                 <div className="hidden sm:flex items-center justify-between text-left">
                   {/* Firm Info */}
                   <div className="flex items-center space-x-4">
                     <div className="relative">
-                      <div className="w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center font-bold text-xl">
-                        {firm.logo}
+                      <div className="w-16 h-16 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
+                        <img src={firm.logo} alt="Logo" className="w-16 h-16 rounded-lg object-contain" />
                       </div>
-                      <CheckCircle2 className="absolute -top-2 -right-2 w-6 h-6 text-green-500 fill-green-500 bg-[#0A0A0A] rounded-full" />
+                      <CheckCircle2 className="absolute -top-2 -right-2 w-5 h-5 text-green-500 fill-green-500 bg-[#0A0A0A] rounded-full" />
                     </div>
                     <div>
                       <h3 className="font-bold text-xl">
@@ -149,17 +155,25 @@ const HeroSection = () => {
                   {/* Offer */}
                   <div className="flex flex-col items-center space-y-2">
                     <p className="font-semibold text-lg">{firm.discount}</p>
-                    <Button size="sm" className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white text-xs w-28" onClick={showComingSoon}>
+                    <Button size="sm" className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white text-xs w-28">
                       TRUSTED
                     </Button>
                   </div>
-                  
+
                   {/* Action Buttons */}
                   <div className="flex items-center space-x-3">
-                    <Button variant="outline" className="border-[#4A6CF7] text-[#4A6CF7] hover:bg-[#4A6CF7]/10 hover:text-[#6C8CFF]" onClick={showComingSoon}>
-                      Read Review
-                    </Button>
-                    <Button className="bg-gradient-to-r from-[#4A6CF7] to-[#6C8CFF] hover:opacity-90 text-white" onClick={showComingSoon}>
+                    <Link to={`/reviews/${firm.slug}`}>
+                      <Button
+                        variant="outline"
+                        className="border-[#4A6CF7] text-[#4A6CF7] hover:bg-[#4A6CF7]/10 hover:text-[#6C8CFF]"
+                      >
+                        Read Review
+                      </Button>
+                    </Link>
+                    <Button
+                      className="bg-gradient-to-r from-[#4A6CF7] to-[#6C8CFF] hover:opacity-90 text-white"
+                      onClick={() => window.open(firm.buyLink, '_blank')}
+                    >
                       Buy Now
                     </Button>
                   </div>

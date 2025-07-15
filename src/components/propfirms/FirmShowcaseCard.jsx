@@ -3,7 +3,7 @@ import { Star, CheckCircle, ExternalLink, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
-const FirmShowcaseCard = ({ firm, logo, rating, reviews, highlights, cta, reviewLink, slug }) => {
+const FirmShowcaseCard = ({ firm, logo, rating, reviews, highlights, cta, reviewLink, slug, buylink }) => {
 
     const handleCtaClick = () => {
         window.open(cta.link, '_blank', 'noopener,noreferrer');
@@ -14,9 +14,11 @@ const FirmShowcaseCard = ({ firm, logo, rating, reviews, highlights, cta, review
             <div className="p-6 md:p-8">
                 {/* Header */}
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-6">
-                    <div className="w-20 h-20 bg-gray-700 rounded-lg flex items-center justify-center font-bold text-3xl flex-shrink-0">
-                        {logo}
-                    </div>
+                    <div className="relative">
+                            <div className="w-16 h-16 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
+                                <img src={logo} alt="Logo" className="w-16 h-16 rounded-lg object-contain" />
+                            </div>
+                        </div>
                     <div className="text-center sm:text-left">
                         <h2 className="text-2xl md:text-3xl font-bold">{firm}</h2>
                         <div className="flex items-center justify-center sm:justify-start gap-2 text-md text-gray-400 mt-1">
@@ -45,7 +47,7 @@ const FirmShowcaseCard = ({ firm, logo, rating, reviews, highlights, cta, review
                      <Button 
                         size="lg" 
                         className="w-full sm:w-auto bg-gradient-to-r from-green-500 to-teal-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-green-500/40 transform hover:scale-105 transition-all duration-300"
-                        onClick={handleCtaClick}
+                        onClick={() => window.open(buylink, '_blank')}
                     >
                         {cta.text}
                         <ExternalLink className="w-5 h-5 ml-2" />

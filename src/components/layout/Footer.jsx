@@ -75,7 +75,7 @@ const Footer = () => {
           <div className="space-y-4">
             <p className="text-lg font-semibold">Contact</p>
             <p className="text-[#B0B0B0] hover:text-[#4A6CF7] cursor-pointer transition-colors" onClick={showComingSoon}>
-              support@mypropfirm.com
+              support@mytrustedprop.com
             </p>
           </div>
 
@@ -97,7 +97,7 @@ const Footer = () => {
                 :
                 <Link key={link.name} to={link.path} className="block text-[#B0B0B0] hover:text-[#4A6CF7] cursor-pointer transition-colors">{link.name}</Link>
               ))}
-              <p className="text-[#B0B0B0] font-semibold pt-2">S and A Marketing FZCO</p>
+              {/* <p className="text-[#B0B0B0] font-semibold pt-2">My Trusted Prop</p> */}
             </div>
           </div>
         </div>

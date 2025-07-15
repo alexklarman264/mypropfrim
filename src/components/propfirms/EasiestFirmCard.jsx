@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { toast } from '@/components/ui/use-toast';
 
 const EasiestFirmCard = ({ firm, index }) => {
-    const { name, logo, rating, reviews, features, badge, discountCode, discountLabel, ctaLink, reviewLink } = firm;
+    const { name, logo, rating, reviews, features, badge, discountCode, discountLabel, ctaLink, reviewLink,buylink } = firm;
 
     const copyToClipboard = (text) => {
         navigator.clipboard.writeText(text);
@@ -31,9 +31,9 @@ const EasiestFirmCard = ({ firm, index }) => {
                 {/* Header */}
                 <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center font-bold text-xl flex-shrink-0">
-                            {logo}
-                        </div>
+                         <div className="w-16 h-16 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
+                                <img src={logo} alt="Logo" className="w-16 h-16 rounded-lg object-contain" />
+                            </div>
                         <div>
                             <h3 className="text-xl font-bold">{name}</h3>
                             <div className="flex items-center gap-1.5 text-sm text-gray-400">
@@ -72,7 +72,7 @@ const EasiestFirmCard = ({ firm, index }) => {
                      <Button 
                         size="lg" 
                         className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-lg shadow-lg hover:shadow-blue-500/40 transform hover:scale-105 transition-all duration-300"
-                        onClick={() => window.open(ctaLink, '_blank')}
+                        onClick={() => window.open(buylink, '_blank')}
                     >
                         Start Challenge
                         <ExternalLink className="w-4 h-4 ml-2" />

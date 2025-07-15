@@ -15,7 +15,8 @@ const OfferCard = ({
     isFirst,
     hasMultipleOffers,
     isExpanded,
-    onToggleExpand
+    onToggleExpand, 
+    buylink
 }) => {
     const showBuyNowToast = () => {
         toast({
@@ -32,8 +33,10 @@ const OfferCard = ({
                 <div className="flex items-start justify-between gap-4 mb-4">
                     {/* Company Info */}
                     <div className="flex items-center gap-3 flex-1 min-w-0">
-                        <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center font-bold text-lg flex-shrink-0">
-                            {logo}
+                        <div className="relative">
+                            <div className="w-16 h-16 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
+                                <img src={logo} alt="Logo" className="w-16 h-16 rounded-lg object-contain" />
+                            </div>
                         </div>
                         <div className="min-w-0 flex-1">
                             <h3 className="font-semibold text-base leading-tight truncate">{firmName}</h3>
@@ -44,14 +47,14 @@ const OfferCard = ({
                             </div>
                         </div>
                     </div>
-                    
+
                     {/* Discount Badge */}
                     <div className="text-right flex-shrink-0">
                         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-1.5 px-2.5 rounded-md shadow-md text-sm inline-block">
                             {offer.discount}
                         </div>
                         {offer.extra && (
-                           <div className="flex items-center justify-end gap-1 text-[10px] text-gray-400 mt-2">
+                            <div className="flex items-center justify-end gap-1 text-[10px] text-gray-400 mt-2">
 
                                 <span>🎁 {offer.extra}</span>
                                 {offer.tooltip && <InfoTooltip content={offer.tooltip} />}
@@ -92,7 +95,7 @@ const OfferCard = ({
                     {/* Column 3: Buy button */}
                     <div className="flex justify-end">
                         <Button
-                            onClick={showBuyNowToast}
+                            onClick={() => window.open(buylink, '_blank')}
                             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm px-4 py-2"
                         >
                             Buy
@@ -118,9 +121,11 @@ const OfferCard = ({
 
                 {/* Firm Info */}
                 <div className="w-1/2 flex items-center gap-4">
-                    <div className="w-14 h-14 bg-gray-700 rounded-lg flex items-center justify-center font-bold text-2xl">
-                        {logo}
-                    </div>
+                    <div className="relative">
+                            <div className="w-16 h-16 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
+                                <img src={logo} alt="Logo" className="w-16 h-16 rounded-lg object-contain" />
+                            </div>
+                        </div>
                     <div>
                         <h3 className="font-semibold text-2xl">{firmName}</h3>
                         <div className="flex items-center gap-2 text-base text-gray-400">
@@ -156,8 +161,9 @@ const OfferCard = ({
                     <CopyCodeButton code={offer.code} />
 
                     <Button
-                        onClick={showBuyNowToast}
+                        onClick={() => window.open(buylink, '_blank')}
                         className="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-base"
+                        
                     >
                         Buy
                     </Button>

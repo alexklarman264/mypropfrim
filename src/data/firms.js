@@ -4,161 +4,78 @@
 
 export const firms = [
   {
-    id: "alpha-capital",
-    name: "Alpha Capital",
-    slug: "alpha-capital",
-    logo: "AC",
-    rating: 4.4,
-    reviews: 693,
-    
-    // Basic Info
-    basicInfo: {
-      type: "Forex Prop Firm",
-      tag: "🥇 Editor's Pick",
-      challengeCost: "$99",
-      profitTarget: "10%",
-      payoutSplit: "90%",
-      steps: "1-Step Challenge",
-      timeLimit: "Unlimited"
-    },
-    
-    // Challenge Details
-    challenge: {
-      type: "1-Step / 2-Step",
-      minDays: "0 days",
-      maxDailyDrawdown: "5%",
-      maxOverallDrawdown: "10%",
-      profitTarget: "8-10%",
-      timeDuration: "Unlimited",
-      refund: "Yes, on first payout"
-    },
-    
-    // Drawdown
-    drawdown: {
-      daily: "5%",
-      max: "10%"
-    },
-    
-    // Offers & Discounts
-    offers: [
-      { discount: "15% OFF", extra: "+ FREE ACCOUNT", code: "MATCH", buyLink: "#", tooltip: "Get a free account of the same size if you reach the first payout on Power challenges." },
-      { discount: "25% OFF", extra: "25% OFF ON ALPHA ONE ...", code: "PFM1", buyLink: "#" },
-      { discount: "25% OFF", extra: "25% OFF ON ALPHA ONE ...", code: "PFM1", buyLink: "#" }
-    ],
-    
-    // Features & Highlights
-    features: ["1-Step Challenge", "No Daily Drawdown", "8% Profit Target", "Free Retry on Failure", "Crypto Payouts"],
-    highlights: [
-      "No Daily Drawdown",
-      "1-Step Challenge", 
-      "Payout in 24–48 hrs",
-      "Crypto & Card Withdrawals",
-      "Free Retry if Failed"
-    ],
-    
-    // Pros & Cons
-    pros: ["Up to 90% Payout", "Crypto payouts", "Fast support", "No daily drawdown"],
-    cons: ["Strict trading rules", "No free retry on failure"],
-    
-    // User Reviews
-    userReviews: [
-      { name: "David R.", rating: 5, comment: "Loved the challenge. Got paid within 2 days! The no daily drawdown rule is a game changer." },
-      { name: "Sara M.", rating: 4, comment: "Good experience but the rules were a bit strict for my trading style. Support was helpful though." }
-    ],
-    
-    // CTAs & Links
-    cta: {
-      text: "Get Funded Now",
-      link: "#"
-    },
-    reviewLink: "/reviews/alpha-capital",
-    
-    // Page-specific data
-    pageData: {
-      badge: "Beginner Friendly",
-      discountCode: "MATCH15",
-      discountLabel: "15% OFF + Free Retry",
-      separator: {
-        icon: "🚀",
-        text: "Fastest Growth"
-      },
-      recommendations: ["Fast payouts", "Free retries", "Crypto payouts", "Low challenge cost"],
-      freeRetry: true,
-      bonus: "15% OFF + Free Account"
-    }
-  },
-
-  {
-    id: "funding-pips",
-    name: "Funding Pips",
-    slug: "funding-pips", 
-    logo: "FP",
-    rating: 4.8,
-    reviews: 1450,
+    id: "fxify",
+    name: "FXIFY",
+    slug: "fxify",
+    logo: "/firmlogos/fxify.webp",
+    rating: 4.5,
+    reviews: 1343,
     
     basicInfo: {
       type: "Instant Prop Firm",
-      tag: "🔥 Trending",
-      challengeCost: "$49",
+      tag: "🔥 Editor's Choice",
+      challengeCost: "$139",
       profitTarget: "8%",
-      payoutSplit: "95%",
-      steps: "2-Step Challenge",
-      timeLimit: "No Limit"
+      payoutSplit: "90%",
+      steps: "1-Step Challenge",
+      timeLimit: "No time limit"
     },
     
     challenge: {
-      type: "2-Step",
-      minDays: "0 days",
-      maxDailyDrawdown: "5%",
-      maxOverallDrawdown: "10%",
-      profitTarget: "8% (Phase 1), 5% (Phase 2)",
-      timeDuration: "Unlimited",
-      refund: "Yes, on first payout"
+      type: "1-Step",
+      minDays: "5 days",
+      maxDailyDrawdown: "4%",
+      maxOverallDrawdown: "6%",
+      profitTarget: "8% / 5%",
+      timeDuration: "No time limit",
+      refund: "Yes, 125% on first payout"
     },
     
     drawdown: {
-      daily: "5%",
-      max: "10%"
+      daily: "4%",
+      max: "6%"
     },
     
     offers: [
-      { discount: "5% OFF", extra: "", code: "TRUSTED", buyLink: "#" }
+      { discount: "15% OFF", extra: "+ 90% PAYOUT", code: "FXIFY15", buyLink: "#", tooltip: "Enjoy an industry-leading 90% payout on all your profits." }
     ],
     
-    features: ["No Time Limit", "Fast Payouts (24 hrs)", "News Trading Allowed", "Best Spreads", "5% Profit Target (Phase 2)"],
+    features: ["1-Step Challenge", "No Time Limit", "Fast Payouts", "Crypto Withdrawals", "Flexible Rules"],
     highlights: [
-      "Up to 95% Payout",
-      "No Time Limit", 
-      "Fast Payouts (within 24 hrs)",
-      "News Trading Allowed",
-      "Best Spreads"
+      "Up to 90% profit split",
+      "Fast payouts & crypto withdrawal options",
+      "Flexible trading rules & great scaling",
+      "No time limit on challenge",
+      "Featured by many trading influencers"
     ],
     
-    pros: ["Industry-leading 95% payout", "Very low challenge cost", "Fast payouts", "News trading allowed"],
-    cons: ["Newer firm in the market", "Limited educational resources"],
+    pros: ["Up to 90% profit split", "Fast payouts & crypto withdrawal options", "Flexible trading rules", "Great scaling options"],
+    cons: ["Higher challenge cost", "Founded in 2023 (newer firm)"],
     
     userReviews: [
-      { name: "Mike T.", rating: 5, comment: "The best spreads I've seen. Payout was super fast. Highly recommend!" },
-      { name: "Jessica L.", rating: 5, comment: "Can't beat the value. The challenge is fair and the support team is responsive." }
+      { name: "Mark S.", rating: 5, comment: "Exploding in popularity for good reason. High payouts and flexible withdrawals are amazing." },
+      { name: "Lisa K.", rating: 4, comment: "Featured by many trading influencers. The scaling is excellent but challenge cost is a bit high." }
     ],
     
     cta: {
-      text: "Get Funded Now",
+      text: "Start Trading with Fxify",
       link: "#"
     },
-    reviewLink: "/reviews/funding-pips",
+    buyLink: "https://fxify.com/",
+    reviewLink: "/reviews/fxify",
     
     pageData: {
-      badge: "No Time Limit",
-      discountCode: "PIPS5",
-      discountLabel: "5% OFF Your Challenge",
+      badge: "Editor's Choice",
+      discountCode: "FXIFY15",
+      discountLabel: "15% OFF + 90% Payout",
       separator: {
         icon: "🔥",
-        text: "Best Payout Split"
+        text: "Exploding in Popularity"
       },
-      recommendations: ["Best spreads", "No time limit", "Fast payouts", "News trading allowed"],
+      recommendations: ["High payouts", "Flexible withdrawals", "Great scaling", "No time limit"],
       freeRetry: true,
-      bonus: "5% Bonus on Payout"
+      bonus: "90% Payout + Crypto Withdrawals",
+      discount: "15% OFF"
     }
   },
 
@@ -166,18 +83,18 @@ export const firms = [
     id: "ftmo",
     name: "FTMO",
     slug: "ftmo",
-    logo: "FT",
+    logo: "/firmlogos/ftmo.webp",
     rating: 4.9,
-    reviews: 50000,
+    reviews: 24354,
     
     basicInfo: {
       type: "Instant Prop Firm",
       tag: "🏆 Most Trusted",
-      challengeCost: "€155",
+      challengeCost: "$155",
       profitTarget: "10%",
-      payoutSplit: "90%",
+      payoutSplit: "80% → 90%",
       steps: "2-Step Challenge", 
-      timeLimit: "No Limit"
+      timeLimit: "30-day challenge, 60-day verification"
     },
     
     challenge: {
@@ -186,7 +103,7 @@ export const firms = [
       maxDailyDrawdown: "5%",
       maxOverallDrawdown: "10%",
       profitTarget: "10% (Phase 1), 5% (Phase 2)",
-      timeDuration: "Unlimited",
+      timeDuration: "30-day challenge, 60-day verification",
       refund: "Yes, with first payout"
     },
     
@@ -200,16 +117,16 @@ export const firms = [
       { discount: "5% OFF", extra: "ON $200K ACCOUNT", code: "FTMO5", buyLink: "#" }
     ],
     
-    features: ["1-Step or 2-Step Challenges", "Free Trial Account", "Reputable & Trusted", "Excellent Support"],
+    features: ["2-Step Challenge", "Free Trial Account", "Reputable & Trusted", "Excellent Support"],
     highlights: [
-      "Up to 90% Scaling Plan",
-      "1-Step or 2-Step Challenges",
-      "Free Trial Account", 
-      "Reputable & Trusted",
-      "Excellent Support"
+      "Most trusted prop firm worldwide",
+      "Solid platform, strong support, strict rules",
+      "Perfect for consistent traders",
+      "Oldest, most respected brand",
+      "Transparent rules, strong payout history"
     ],
     
-    pros: ["Industry pioneer and highly trusted", "Excellent free trial", "Great educational content", "Scaling plan up to $2M"],
+    pros: ["Industry pioneer and highly trusted", "4.8/5 on Trustpilot", "Great educational content", "Scaling plan up to $2M"],
     cons: ["Higher challenge cost", "Stricter rules on some strategies"],
     
     userReviews: [
@@ -218,9 +135,10 @@ export const firms = [
     ],
     
     cta: {
-      text: "Get Funded Now",
+      text: "Join FTMO Now",
       link: "#"
     },
+    buyLink: "https://ftmo.com/",
     reviewLink: "/reviews/ftmo",
     
     pageData: {
@@ -231,303 +149,314 @@ export const firms = [
       recommendations: ["Reputable & Trusted", "Free Trial Account", "Excellent Support", "Great community"],
       freeRetry: false,
       bonus: "Free Trial Account",
-      discountCode: "N/A"
+      discountCode: "FTMO10",
+      discount: "10% OFF"
     }
   },
 
   {
-    id: "fxify",
-    name: "FXIFY",
-    slug: "fxify",
-    logo: "FX",
+    id: "funding-traders",
+    name: "Funding Traders",
+    slug: "funding-traders",
+    logo: "/firmlogos/fundingtraders.png",
     rating: 4.5,
-    reviews: 1343,
+    reviews: 2560,
     
     basicInfo: {
-      type: "Instant Prop Firm",
-      challengeCost: "$99",
-      profitTarget: "10%",
-      payoutSplit: "90%",
-      steps: "1-Step Challenge",
+      type: "Forex Prop Firm",
+      tag: "🚀 High Payout",
+      challengeCost: "$109",
+      profitTarget: "8%",
+      payoutSplit: "95%",
+      steps: "2-Step Challenge",
       timeLimit: "No Limit"
     },
     
+    challenge: {
+      type: "2-Step",
+      minDays: "0 days",
+      maxDailyDrawdown: "5%",
+      maxOverallDrawdown: "8%",
+      profitTarget: "8% / 5%",
+      timeDuration: "No limit",
+      refund: "Yes, on first payout"
+    },
+    
+    drawdown: {
+      daily: "5%",
+      max: "8%"
+    },
+    
     offers: [
-      { discount: "15% OFF", extra: "+ 90% PAYOUT", code: "FXIFY15", buyLink: "#", tooltip: "Enjoy an industry-leading 90% payout on all your profits." }
+      { discount: "15% OFF", extra: "WEEKEND TRADING", code: "WEEKEND15", buyLink: "#" }
+    ],
+    
+    features: ["Weekend Trading Allowed", "News Trading Allowed", "Up to 95% Profit Share", "Aggressive Trading Friendly"],
+    highlights: [
+      "Up to 95% profit split",
+      "News & weekend trading allowed",
+      "Great challenge price",
+      "Good for aggressive traders"
+    ],
+    
+    pros: ["Industry-leading 95% payout", "Weekend/news trading allowed", "Great challenge price", "Perfect for aggressive traders"],
+    cons: ["Founded in 2023 (newer firm)", "Limited educational resources"],
+    
+    userReviews: [
+      { name: "Alex M.", rating: 5, comment: "95% profit split is unbeatable! Weekend trading is a huge plus for my strategy." },
+      { name: "Sarah P.", rating: 4, comment: "Great for aggressive traders. News trading allowed makes it very flexible." }
     ],
     
     cta: {
-      text: "Get Funded Now",
+      text: "Get Funded Today",
       link: "#"
     },
+    buyLink: "https://fundingtraders.com/",
+    reviewLink: "/reviews/funding-traders",
     
     pageData: {
+      badge: "Weekend Trading",
+      discountCode: "WEEKEND15",
+      discountLabel: "15% OFF + Weekend Trading",
+      separator: {
+        icon: "🚀",
+        text: "Highest Payout Split"
+      },
+      recommendations: ["95% payout", "Weekend trading", "News trading", "Aggressive trading friendly"],
+      freeRetry: true,
+      bonus: "Weekend & News Trading Allowed",
       discount: "15% OFF"
     }
   },
 
   {
-    id: "the5ers",
-    name: "The5%ers",
-    slug: "the5ers",
-    logo: "T5",
+    id: "plutus-tradebase",
+    name: "Plutus TradeBase",
+    slug: "plutus-tradebase",
+    logo: "/firmlogos/plutustradebase.png",
     rating: 4.7,
-    reviews: 1153,
+    reviews: 286,
     
     basicInfo: {
       type: "Forex Prop Firm",
-      challengeCost: "$79",
-      profitTarget: "10%",
-      payoutSplit: "90%",
-      steps: "2-Step Challenge",
-      timeLimit: "No Limit"
-    },
-    
-    offers: [
-      { discount: "5% OFF", extra: "", code: "THE5", buyLink: "#" }
-    ],
-    
-    cta: {
-      text: "Get Funded Now", 
-      link: "#"
-    },
-    
-    pageData: {
-      discount: "5% OFF",
-      originalPrice: 79,
-      discountedPrice: 71.10,
-      code: "TRUSTED10"
-    }
-  },
-
-  {
-    id: "the-funded-trader",
-    name: "The Funded Trader",
-    slug: "the-funded-trader",
-    logo: "TFT",
-    rating: 4.7,
-    reviews: 25000,
-    
-    basicInfo: {
-      challengeCost: "$129",
-      profitTarget: "10%",
+      tag: "💰 Best Value",
+      challengeCost: "$99",
+      profitTarget: "8%",
       payoutSplit: "80%",
       steps: "2-Step Challenge",
-      timeLimit: "35 Days"
-    },
-    
-    drawdown: {
-      daily: "6%",
-      max: "12%"
-    },
-    
-    cta: {
-      buy: "#",
-      review: "/reviews/the-funded-trader"
-    },
-    
-    pageData: {
-      freeRetry: true,
-      bonus: "Scaling Plan up to $1.5M",
-      discountCode: "TFT10"
-    }
-  },
-
-  {
-    id: "myforexfunds",
-    name: "MyForexFunds",
-    slug: "myforexfunds",
-    logo: "MFF",
-    rating: 4.8,
-    reviews: 30000,
-    
-    basicInfo: {
-      challengeCost: "$84",
-      profitTarget: "8%",
-      payoutSplit: "85%",
-      steps: "2-Step Challenge",
       timeLimit: "No Limit"
+    },
+    
+    challenge: {
+      type: "2-Step",
+      minDays: "0 days",
+      maxDailyDrawdown: "5%",
+      maxOverallDrawdown: "10%",
+      profitTarget: "8% / 5%",
+      timeDuration: "No limit",
+      refund: "Yes, on first payout"
     },
     
     drawdown: {
       daily: "5%",
-      max: "12%"
+      max: "10%"
     },
+    
+    offers: [
+      { discount: "20% OFF", extra: "SIMPLE RULES", code: "FUNDME20", buyLink: "#", tooltip: "Simple rules with no complex restrictions" }
+    ],
+    
+    features: ["Simple Rules", "No Complex Restrictions", "Fast Challenge Setup", "Clear Platform"],
+    highlights: [
+      "Solid platform with clear rules",
+      "Fast challenge setup",
+      "Simple rules, no complex restrictions",
+      "Great value for money"
+    ],
+    
+    pros: ["Simple rules with no complex restrictions", "Fast challenge setup", "Clear platform", "Good value for money"],
+    cons: ["Lower payout split than competitors", "Founded in 2024 (newer firm)"],
+    
+    userReviews: [
+      { name: "Tom R.", rating: 4, comment: "Simple rules make it easy to understand. Fast challenge setup is great." },
+      { name: "Nina L.", rating: 4, comment: "Solid platform with clear rules. 20% OFF code is a nice bonus." }
+    ],
     
     cta: {
-      buy: "#",
-      review: "/reviews/myforexfunds"
+      text: "Use Code & Start Challenge",
+      link: "#"
     },
+    buyLink: "https://plutustradebase.com/",
+    reviewLink: "/reviews/plutus-tradebase",
     
     pageData: {
+      badge: "Simple Rules",
+      discountCode: "FUNDME20",
+      discountLabel: "20% OFF Simple Rules",
+      separator: {
+        icon: "💰",
+        text: "Best Value"
+      },
+      recommendations: ["Simple rules", "Fast setup", "Clear platform", "Good value"],
       freeRetry: true,
-      bonus: "12% Bonus from Phase 2",
-      discountCode: "MFF10",
-      originalPrice: 69,
-      discountedPrice: 55.20,
-      code: "TRUSTED20"
+      bonus: "20% OFF with Simple Rules",
+      discount: "20% OFF",
+      originalPrice: 99,
+      discountedPrice: 79.20,
+      code: "FUNDME20"
     }
   },
 
   {
-    id: "aquafunded",
-    name: "AquaFunded",
-    slug: "aquafunded",
-    logo: "AF",
-    rating: 4.7,
-    reviews: 450,
-    
-    features: ["1-Step Challenge", "90% Payout Split", "No Time Limit", "Bi-Weekly Payouts", "Scaling up to $2M"],
-    
-    cta: {
-      text: "Get Funded Now",
-      link: "#"
-    },
-    reviewLink: "/reviews/funding-pips",
-    
-    pageData: {
-      badge: "Fastest Funding",
-      discountCode: "AQUA5",
-      discountLabel: "5% OFF"
-    }
-  },
-
-  {
-    id: "glow-node",
-    name: "Glow Node",
-    slug: "glow-node",
-    logo: "GN",
-    rating: 4.6,
-    reviews: 300,
-    
-    features: ["1-Step Challenge", "No Minimum Trading Days", "Unlimited Trading Period", "Up to 90% Payout", "EA & Bots Allowed"],
-    
-    cta: {
-      text: "Get Funded Now",
-      link: "#"
-    },
-    reviewLink: "/reviews/ftmo",
-    
-    pageData: {
-      badge: "1-Step Only"
-    }
-  },
-
-  {
-    id: "pipfarm",
-    name: "PipFarm",
-    slug: "pipfarm",
-    logo: "PF",
-    rating: 4.9,
-    reviews: 150,
-    
-    features: ["Instant Funding", "No Challenge Required", "Up to 50% Payout", "Get Started in Minutes", "Weekly Payouts"],
-    
-    cta: {
-      text: "Get Funded Now",
-      link: "#"
-    },
-    reviewLink: "/reviews/alpha-capital",
-    
-    pageData: {
-      badge: "Instant Funding",
-      discountCode: "FARM10",
-      discountLabel: "10% BONUS on first payout"
-    }
-  },
-
-  {
-    id: "swift-funding",
-    name: "Swift Funding",
-    slug: "swift-funding",
-    logo: "SF",
-    rating: 4.5,
-    reviews: 550,
-    
-    features: ["1-Step Challenge", "7-Day Payout Cycle", "No Daily Drawdown", "Competitive Spreads", "User-Friendly Dashboard"],
-    
-    cta: {
-      text: "Get Funded Now",
-      link: "#"
-    },
-    reviewLink: "/reviews/ftmo",
-    
-    pageData: {
-      badge: "No Daily Drawdown"
-    }
-  },
-
-  {
-    id: "nostro",
-    name: "Nostro",
-    slug: "nostro",
-    logo: "N",
-    rating: 4.2,
-    reviews: 1285,
-    
-    basicInfo: {
-      type: "Forex Prop Firm"
-    },
-    
-    pageData: {
-      discount: "0% OFF"
-    }
-  },
-
-  {
-    id: "my-crypto-funding",
-    name: "My Crypto Funding",
-    slug: "my-crypto-funding",
-    logo: "MCF",
-    rating: 4.7,
-    reviews: 1182,
-    
-    basicInfo: {
-      type: "Crypto Prop Firm"
-    },
-    
-    pageData: {
-      discount: "20% OFF"
-    }
-  },
-
-  {
-    id: "e8-markets",
-    name: "E8 Markets",
-    slug: "e8-markets",
-    logo: "E8",
+    id: "blueberry-funded",
+    name: "Blueberry Funded",
+    slug: "blueberry-funded",
+    logo: "/firmlogos/blueberry_funded.webp",
     rating: 4.4,
-    reviews: 20000,
+    reviews: 650,
     
     basicInfo: {
-      type: "Forex Prop Firm"
+      type: "Forex Prop Firm",
+      tag: "🧠 Beginner Friendly",
+      challengeCost: "$99",
+      profitTarget: "8%",
+      payoutSplit: "80% → 90%",
+      steps: "2-Step Challenge",
+      timeLimit: "No Strict Time Pressure"
     },
     
+    challenge: {
+      type: "2-Step",
+      minDays: "0 days",
+      maxDailyDrawdown: "5%",
+      maxOverallDrawdown: "10%",
+      profitTarget: "8% / 5%",
+      timeDuration: "No strict time pressure",
+      refund: "Yes, on first payout"
+    },
+    
+    drawdown: {
+      daily: "5%",
+      max: "10%"
+    },
+    
+    offers: [
+      { discount: "20% OFF", extra: "EASY TARGETS", code: "FUNDME20", buyLink: "#", tooltip: "8% / 5% targets with no strict time pressure" }
+    ],
+    
+    features: ["8% / 5% Targets", "No Strict Time Pressure", "Simple Structure", "Generous Payouts"],
+    highlights: [
+      "Underrated firm with simple structure",
+      "Generous payouts",
+      "8% / 5% targets",
+      "No strict time pressure"
+    ],
+    
+    pros: ["8% / 5% targets are achievable", "No strict time pressure", "Simple structure", "Generous payouts"],
+    cons: ["Lower recognition in market", "Smaller community"],
+    
+    userReviews: [
+      { name: "Mike K.", rating: 5, comment: "8% / 5% targets are much more achievable. No time pressure makes it stress-free." },
+      { name: "Anna S.", rating: 4, comment: "Underrated firm with simple structure. Generous payouts as promised." }
+    ],
+    
+    cta: {
+      text: "Use Code & Start Now",
+      link: "#"
+    },
+    buyLink: "https://blueberryfunded.com/",
+    reviewLink: "/reviews/blueberry-funded",
+    
     pageData: {
-      discount: "12% OFF"
+      badge: "Beginner Friendly",
+      discountCode: "FUNDME20",
+      discountLabel: "20% OFF Easy Targets",
+      separator: {
+        icon: "🧠",
+        text: "Easiest Targets"
+      },
+      recommendations: ["Easy targets", "No time pressure", "Simple structure", "Generous payouts"],
+      freeRetry: true,
+      bonus: "20% OFF with Easy Targets",
+      discount: "20% OFF",
+      originalPrice: 99,
+      discountedPrice: 79.20,
+      code: "FUNDME20"
     }
   },
 
   {
-    id: "fundednext",
-    name: "FundedNext",
-    slug: "fundednext",
-    logo: "FN",
-    rating: 4.5,
-    reviews: 1000,
+    id: "blue-guardian",
+    name: "Blue Guardian",
+    slug: "blue-guardian",
+    logo: "/firmlogos/blue_guardian.webp",
+    rating: 4.6,
+    reviews: 1200,
     
     basicInfo: {
-      challengeCost: "$89",
-      profitTarget: "10%",
-      payoutSplit: "90%",
+      type: "Forex Prop Firm",
+      tag: "💼 Community Trusted",
+      challengeCost: "$109",
+      profitTarget: "8%",
+      payoutSplit: "85%",
       steps: "2-Step Challenge",
-      timeLimit: "No Limit"
+      timeLimit: "35-day challenge"
     },
     
+    challenge: {
+      type: "2-Step",
+      minDays: "0 days",
+      maxDailyDrawdown: "5%",
+      maxOverallDrawdown: "10%",
+      profitTarget: "8% / 5%",
+      timeDuration: "35-day challenge",
+      refund: "Yes, on first payout"
+    },
+    
+    drawdown: {
+      daily: "5%",
+      max: "10%"
+    },
+    
+    offers: [
+      { discount: "10% OFF", extra: "COMMUNITY CHOICE", code: "GUARDIAN10", buyLink: "#" }
+    ],
+    
+    features: ["Community Trusted", "Active Support", "Social Media Presence", "Discord Community"],
+    highlights: [
+      "Trusted by Discord/YouTube communities",
+      "Very active on support & social media",
+      "Strong community presence",
+      "35-day challenge window"
+    ],
+    
+    pros: ["Trusted by Discord/YouTube communities", "Very active support & social media", "Strong community", "Good challenge timeframe"],
+    cons: ["Mid-range payout split", "Less established than major firms"],
+    
+    userReviews: [
+      { name: "Jake W.", rating: 5, comment: "Trusted by Discord/YouTube communities. Very active support team." },
+      { name: "Rachel T.", rating: 4, comment: "Very active on support & social media. Great community feel." }
+    ],
+    
+    cta: {
+      text: "Join Blue Guardian",
+      link: "#"
+    },
+    buyLink: "https://blueguardian.com/",
+    reviewLink: "/reviews/blue-guardian",
+    
     pageData: {
-      originalPrice: 89,
-      discountedPrice: 66.75,
-      code: "TRUSTED25"
+      badge: "Community Trusted",
+      discountCode: "GUARDIAN10",
+      discountLabel: "10% OFF Community Choice",
+      separator: {
+        icon: "💼",
+        text: "Community Choice"
+      },
+      recommendations: ["Community trusted", "Active support", "Social media presence", "Discord community"],
+      freeRetry: true,
+      bonus: "Community Trusted Choice",
+      discount: "10% OFF"
     }
   }
 ];
@@ -545,14 +474,18 @@ export const getOffersData = () => {
       logo: firm.logo,
       rating: firm.rating,
       reviews: firm.reviews,
-      offers: firm.offers
+      offers: firm.offers,
+      buylink: firm.buyLink
     }));
 };
 
-// Best Prop Firms Page
+// Best Prop Firms Page - Top 3 Editor's Picks
 export const getTopFirmsData = () => {
+  // Return the top 3 firms as specified by client
+  const topFirms = ["fxify", "ftmo", "funding-traders"];
   return firms
-    .filter(firm => firm.highlights && firm.pageData?.separator)
+    .filter(firm => topFirms.includes(firm.id))
+    .sort((a, b) => topFirms.indexOf(a.id) - topFirms.indexOf(b.id))
     .map(firm => ({
       firm: firm.name,
       slug: firm.slug,
@@ -562,7 +495,9 @@ export const getTopFirmsData = () => {
       highlights: firm.highlights,
       cta: firm.cta,
       reviewLink: firm.reviewLink,
-      separator: firm.pageData.separator
+      separator: firm.pageData?.separator || { icon: "🔥", text: "Editor's Pick" },
+      buylink: firm.buyLink
+
     }));
 };
 
@@ -585,7 +520,9 @@ export const getAllFirmsData = () => {
       freeRetry: firm.pageData?.freeRetry,
       bonus: firm.pageData?.bonus,
       discountCode: firm.pageData?.discountCode,
-      cta: firm.cta
+      cta: firm.cta,
+      buylink: firm.buyLink,
+      reviewLink: firm.reviewLink
     }));
 };
 
@@ -604,7 +541,9 @@ export const getEasiestFirmsData = () => {
       discountCode: firm.pageData.discountCode,
       discountLabel: firm.pageData.discountLabel,
       ctaLink: firm.cta?.link || "#",
-      reviewLink: firm.reviewLink
+      reviewLink: firm.reviewLink,
+      buylink: firm.buyLink,
+
     }));
 };
 
@@ -656,17 +595,39 @@ export const getCheapestFirms = () => {
     .sort((a, b) => a.discountedPrice - b.discountedPrice);
 };
 
-// Hero Section
+// Hero Section - Top 7 Most Trusted
 export const getHeroTopFirms = () => {
   return firms
     .filter(firm => firm.pageData?.discount !== undefined)
+    .slice(0, 7)
     .map(firm => ({
       name: firm.name.includes(" ") ? firm.name.split(" ") : [firm.name],
+      slug: firm.slug,
       type: firm.basicInfo?.type || "Forex Prop Firm",
       logo: firm.logo,
       score: firm.rating,
       users: firm.reviews,
-      discount: firm.pageData.discount
+      discount: firm.pageData.discount,
+      buyLink: firm.buyLink
+    }));
+};
+
+// Most Trusted Firms Page
+export const getMostTrustedFirms = () => {
+  const trustedFirms = ["ftmo", "fxify", "blue-guardian"];
+  return firms
+    .filter(firm => trustedFirms.includes(firm.id))
+    .sort((a, b) => trustedFirms.indexOf(a.id) - trustedFirms.indexOf(b.id))
+    .map(firm => ({
+      name: firm.name,
+      slug: firm.slug,
+      logo: firm.logo,
+      rating: firm.rating,
+      reviews: firm.reviews,
+      highlights: firm.highlights,
+      cta: firm.cta,
+      reviewLink: firm.reviewLink,
+      tag: firm.basicInfo?.tag
     }));
 };
 

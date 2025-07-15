@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Tag } from 'lucide-react';
 import OfferCard from '@/components/offers/OfferCard';
 
-const FirmOfferGroup = ({ firmName, logo, rating, reviews, offers }) => {
+const FirmOfferGroup = ({ firmName, logo, rating, reviews, offers, buylink }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     if (!offers || offers.length === 0) {
@@ -24,6 +24,7 @@ const FirmOfferGroup = ({ firmName, logo, rating, reviews, offers }) => {
                 hasMultipleOffers={hasMultipleOffers}
                 isExpanded={isExpanded}
                 onToggleExpand={() => setIsExpanded(!isExpanded)}
+                buylink= {buylink}
             />
 
             <AnimatePresence>

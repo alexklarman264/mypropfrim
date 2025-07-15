@@ -11,7 +11,7 @@ import { toast } from '@/components/ui/use-toast';
 import { cn } from '@/lib/utils';
 import { getAllFirmsData } from '@/data/firms';
 
-const defaultFirms = ["funding-pips", "ftmo", "alpha-capital"];
+const defaultFirms = ["fxify", "ftmo", "funding-traders"];
 
 const features = [
     { key: 'logo', label: 'Firm' },
@@ -113,7 +113,9 @@ const CompareFirmsPage = () => {
             case 'logo':
                 return (
                     <div className="flex flex-col items-center text-center">
-                        <div className="w-16 h-16 bg-gray-700 rounded-lg flex items-center justify-center font-bold text-2xl mb-2">{firm.logo}</div>
+                        <div className="w-16 h-16 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
+                                <img src={firm.logo} alt="Logo" className="w-16 h-16 rounded-lg object-contain" />
+                            </div>
                         <span className="font-bold text-lg">{firm.name}</span>
                     </div>
                 );
@@ -137,10 +139,10 @@ const CompareFirmsPage = () => {
             case 'cta':
                 return (
                     <div className="flex flex-col items-center gap-2">
-                        <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700" onClick={() => window.open(value.buy, '_blank')}>
+                        <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700" onClick={() => window.open(firm.buylink, '_blank')}>
                             Buy Now <ExternalLink className="w-4 h-4 ml-2" />
                         </Button>
-                        <Link to={value.review}>
+                        <Link to={firm.reviewLink}>
                             <Button size="sm" variant="outline" className="w-full border-gray-600 hover:bg-gray-800">Read Review</Button>
                         </Link>
                     </div>

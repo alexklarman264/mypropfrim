@@ -62,7 +62,11 @@ const ReviewPage = () => {
                         className="text-center mb-12"
                     >
                         <div className="flex justify-center items-center gap-4 mb-4">
-                            <div className="w-20 h-20 bg-gray-700 rounded-lg flex items-center justify-center font-bold text-4xl flex-shrink-0">{firm.logo}</div>
+                            <div className="relative">
+                                <div className="w-16 h-16 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
+                                    <img src={firm.logo} alt="Logo" className="w-16 h-16 rounded-lg object-contain" />
+                                </div>
+                            </div>
                             <h1 className="text-4xl lg:text-5xl font-extrabold">{firm.name}</h1>
                             {firm.tag && <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold hidden sm:block">{firm.tag}</span>}
                         </div>
