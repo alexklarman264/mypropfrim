@@ -178,7 +178,7 @@ const ReviewPage = () => {
                             <Button
                                 size="lg"
                                 className="w-full sm:w-auto bg-gradient-to-r from-green-500 to-teal-500 text-white font-bold text-base sm:text-lg rounded-full shadow-lg hover:shadow-green-500/40 transform hover:scale-105 transition-all duration-300 whitespace-normal text-center px-4 py-3"
-                                onClick={handleCtaClick}
+                                onClick={() => window.open(firm.buylink, '_blank')}
                             >
                                 Get Funded With {firm.name}
                                 <ExternalLink className="w-5 h-5 ml-2 shrink-0" />

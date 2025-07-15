@@ -4,232 +4,6 @@
 
 export const firms = [
   {
-    id: "fxify",
-    name: "FXIFY",
-    slug: "fxify",
-    logo: "/firmlogos/fxify.webp",
-    rating: 4.5,
-    reviews: 1343,
-    
-    basicInfo: {
-      type: "Instant Prop Firm",
-      tag: "🔥 Editor's Choice",
-      challengeCost: "$139",
-      profitTarget: "8%",
-      payoutSplit: "90%",
-      steps: "1-Step Challenge",
-      timeLimit: "No time limit"
-    },
-    
-    challenge: {
-      type: "1-Step",
-      minDays: "5 days",
-      maxDailyDrawdown: "4%",
-      maxOverallDrawdown: "6%",
-      profitTarget: "8% / 5%",
-      timeDuration: "No time limit",
-      refund: "Yes, 125% on first payout"
-    },
-    
-    drawdown: {
-      daily: "4%",
-      max: "6%"
-    },
-    
-    offers: [
-      { discount: "15% OFF", extra: "+ 90% PAYOUT", code: "FXIFY15", buyLink: "#", tooltip: "Enjoy an industry-leading 90% payout on all your profits." }
-    ],
-    
-    features: ["1-Step Challenge", "No Time Limit", "Fast Payouts", "Crypto Withdrawals", "Flexible Rules"],
-    highlights: [
-      "Up to 90% profit split",
-      "Fast payouts & crypto withdrawal options",
-      "Flexible trading rules & great scaling",
-      "No time limit on challenge",
-      "Featured by many trading influencers"
-    ],
-    
-    pros: ["Up to 90% profit split", "Fast payouts & crypto withdrawal options", "Flexible trading rules", "Great scaling options"],
-    cons: ["Higher challenge cost", "Founded in 2023 (newer firm)"],
-    
-    userReviews: [
-      { name: "Mark S.", rating: 5, comment: "Exploding in popularity for good reason. High payouts and flexible withdrawals are amazing." },
-      { name: "Lisa K.", rating: 4, comment: "Featured by many trading influencers. The scaling is excellent but challenge cost is a bit high." }
-    ],
-    
-    cta: {
-      text: "Start Trading with Fxify",
-      link: "#"
-    },
-    buyLink: "https://fxify.com/",
-    reviewLink: "/reviews/fxify",
-    
-    pageData: {
-      badge: "Editor's Choice",
-      discountCode: "FXIFY15",
-      discountLabel: "15% OFF + 90% Payout",
-      separator: {
-        icon: "🔥",
-        text: "Exploding in Popularity"
-      },
-      recommendations: ["High payouts", "Flexible withdrawals", "Great scaling", "No time limit"],
-      freeRetry: true,
-      bonus: "90% Payout + Crypto Withdrawals",
-      discount: "15% OFF"
-    }
-  },
-
-  {
-    id: "ftmo",
-    name: "FTMO",
-    slug: "ftmo",
-    logo: "/firmlogos/ftmo.webp",
-    rating: 4.9,
-    reviews: 24354,
-    
-    basicInfo: {
-      type: "Instant Prop Firm",
-      tag: "🏆 Most Trusted",
-      challengeCost: "$155",
-      profitTarget: "10%",
-      payoutSplit: "80% → 90%",
-      steps: "2-Step Challenge", 
-      timeLimit: "30-day challenge, 60-day verification"
-    },
-    
-    challenge: {
-      type: "2-Step",
-      minDays: "4 days",
-      maxDailyDrawdown: "5%",
-      maxOverallDrawdown: "10%",
-      profitTarget: "10% (Phase 1), 5% (Phase 2)",
-      timeDuration: "30-day challenge, 60-day verification",
-      refund: "Yes, with first payout"
-    },
-    
-    drawdown: {
-      daily: "5%",
-      max: "10%"
-    },
-    
-    offers: [
-      { discount: "10% OFF", extra: "EXCLUSIVE", code: "FTMO10", buyLink: "#" },
-      { discount: "5% OFF", extra: "ON $200K ACCOUNT", code: "FTMO5", buyLink: "#" }
-    ],
-    
-    features: ["2-Step Challenge", "Free Trial Account", "Reputable & Trusted", "Excellent Support"],
-    highlights: [
-      "Most trusted prop firm worldwide",
-      "Solid platform, strong support, strict rules",
-      "Perfect for consistent traders",
-      "Oldest, most respected brand",
-      "Transparent rules, strong payout history"
-    ],
-    
-    pros: ["Industry pioneer and highly trusted", "4.8/5 on Trustpilot", "Great educational content", "Scaling plan up to $2M"],
-    cons: ["Higher challenge cost", "Stricter rules on some strategies"],
-    
-    userReviews: [
-      { name: "John D.", rating: 5, comment: "FTMO is the gold standard. Professional, reliable, and their platform is top-notch." },
-      { name: "Emily C.", rating: 4, comment: "A bit pricey but you get what you pay for. The support and community are worth it." }
-    ],
-    
-    cta: {
-      text: "Join FTMO Now",
-      link: "#"
-    },
-    buyLink: "https://ftmo.com/",
-    reviewLink: "/reviews/ftmo",
-    
-    pageData: {
-      separator: {
-        icon: "🏆",
-        text: "Most Trusted Brand"
-      },
-      recommendations: ["Reputable & Trusted", "Free Trial Account", "Excellent Support", "Great community"],
-      freeRetry: false,
-      bonus: "Free Trial Account",
-      discountCode: "FTMO10",
-      discount: "10% OFF"
-    }
-  },
-
-  {
-    id: "funding-traders",
-    name: "Funding Traders",
-    slug: "funding-traders",
-    logo: "/firmlogos/fundingtraders.png",
-    rating: 4.5,
-    reviews: 2560,
-    
-    basicInfo: {
-      type: "Forex Prop Firm",
-      tag: "🚀 High Payout",
-      challengeCost: "$109",
-      profitTarget: "8%",
-      payoutSplit: "95%",
-      steps: "2-Step Challenge",
-      timeLimit: "No Limit"
-    },
-    
-    challenge: {
-      type: "2-Step",
-      minDays: "0 days",
-      maxDailyDrawdown: "5%",
-      maxOverallDrawdown: "8%",
-      profitTarget: "8% / 5%",
-      timeDuration: "No limit",
-      refund: "Yes, on first payout"
-    },
-    
-    drawdown: {
-      daily: "5%",
-      max: "8%"
-    },
-    
-    offers: [
-      { discount: "15% OFF", extra: "WEEKEND TRADING", code: "WEEKEND15", buyLink: "#" }
-    ],
-    
-    features: ["Weekend Trading Allowed", "News Trading Allowed", "Up to 95% Profit Share", "Aggressive Trading Friendly"],
-    highlights: [
-      "Up to 95% profit split",
-      "News & weekend trading allowed",
-      "Great challenge price",
-      "Good for aggressive traders"
-    ],
-    
-    pros: ["Industry-leading 95% payout", "Weekend/news trading allowed", "Great challenge price", "Perfect for aggressive traders"],
-    cons: ["Founded in 2023 (newer firm)", "Limited educational resources"],
-    
-    userReviews: [
-      { name: "Alex M.", rating: 5, comment: "95% profit split is unbeatable! Weekend trading is a huge plus for my strategy." },
-      { name: "Sarah P.", rating: 4, comment: "Great for aggressive traders. News trading allowed makes it very flexible." }
-    ],
-    
-    cta: {
-      text: "Get Funded Today",
-      link: "#"
-    },
-    buyLink: "https://fundingtraders.com/",
-    reviewLink: "/reviews/funding-traders",
-    
-    pageData: {
-      badge: "Weekend Trading",
-      discountCode: "WEEKEND15",
-      discountLabel: "15% OFF + Weekend Trading",
-      separator: {
-        icon: "🚀",
-        text: "Highest Payout Split"
-      },
-      recommendations: ["95% payout", "Weekend trading", "News trading", "Aggressive trading friendly"],
-      freeRetry: true,
-      bonus: "Weekend & News Trading Allowed",
-      discount: "15% OFF"
-    }
-  },
-
-  {
     id: "plutus-tradebase",
     name: "Plutus TradeBase",
     slug: "plutus-tradebase",
@@ -384,6 +158,226 @@ export const firms = [
       code: "FUNDME20"
     }
   },
+  {
+    id: "fxify",
+    name: "FXIFY",
+    slug: "fxify",
+    logo: "/firmlogos/fxify.webp",
+    rating: 4.5,
+    reviews: 1343,
+    
+    basicInfo: {
+      type: "Instant Prop Firm",
+      tag: "🔥 Editor's Choice",
+      challengeCost: "$139",
+      profitTarget: "8%",
+      payoutSplit: "90%",
+      steps: "1-Step Challenge",
+      timeLimit: "No time limit"
+    },
+    
+    challenge: {
+      type: "1-Step",
+      minDays: "5 days",
+      maxDailyDrawdown: "4%",
+      maxOverallDrawdown: "6%",
+      profitTarget: "8% / 5%",
+      timeDuration: "No time limit",
+      refund: "Yes, 125% on first payout"
+    },
+    
+    drawdown: {
+      daily: "4%",
+      max: "6%"
+    },
+    
+    // No offers mentioned by client for FXIFY
+    
+    features: ["1-Step Challenge", "No Time Limit", "Fast Payouts", "Crypto Withdrawals", "Flexible Rules"],
+    highlights: [
+      "Up to 90% profit split",
+      "Fast payouts & crypto withdrawal options",
+      "Flexible trading rules & great scaling",
+      "No time limit on challenge",
+      "Featured by many trading influencers"
+    ],
+    
+    pros: ["Up to 90% profit split", "Fast payouts & crypto withdrawal options", "Flexible trading rules", "Great scaling options"],
+    cons: ["Higher challenge cost", "Founded in 2023 (newer firm)"],
+    
+    userReviews: [
+      { name: "Mark S.", rating: 5, comment: "Exploding in popularity for good reason. High payouts and flexible withdrawals are amazing." },
+      { name: "Lisa K.", rating: 4, comment: "Featured by many trading influencers. The scaling is excellent but challenge cost is a bit high." }
+    ],
+    
+    cta: {
+      text: "Start Trading with Fxify",
+      link: "#"
+    },
+    buyLink: "https://fxify.com/",
+    reviewLink: "/reviews/fxify",
+    
+    pageData: {
+      badge: "Editor's Choice",
+      discountCode: "N/A",
+      discountLabel: "N/A",
+      separator: {
+        icon: "🔥",
+        text: "Exploding in Popularity"
+      },
+      recommendations: ["High payouts", "Flexible withdrawals", "Great scaling", "No time limit"],
+      freeRetry: true,
+      bonus: "90% Payout + Crypto Withdrawals",
+      discount: "N/A"
+    }
+  },
+
+  {
+    id: "ftmo",
+    name: "FTMO",
+    slug: "ftmo",
+    logo: "/firmlogos/ftmo.webp",
+    rating: 4.9,
+    reviews: 24354,
+    
+    basicInfo: {
+      type: "Instant Prop Firm",
+      tag: "🏆 Most Trusted",
+      challengeCost: "$155",
+      profitTarget: "10%",
+      payoutSplit: "80% → 90%",
+      steps: "2-Step Challenge", 
+      timeLimit: "30-day challenge, 60-day verification"
+    },
+    
+    challenge: {
+      type: "2-Step",
+      minDays: "4 days",
+      maxDailyDrawdown: "5%",
+      maxOverallDrawdown: "10%",
+      profitTarget: "10% (Phase 1), 5% (Phase 2)",
+      timeDuration: "30-day challenge, 60-day verification",
+      refund: "Yes, with first payout"
+    },
+    
+    drawdown: {
+      daily: "5%",
+      max: "10%"
+    },
+    
+    // No offers mentioned by client for FTMO
+    
+    features: ["2-Step Challenge", "Free Trial Account", "Reputable & Trusted", "Excellent Support"],
+    highlights: [
+      "Most trusted prop firm worldwide",
+      "Solid platform, strong support, strict rules",
+      "Perfect for consistent traders",
+      "Oldest, most respected brand",
+      "Transparent rules, strong payout history"
+    ],
+    
+    pros: ["Industry pioneer and highly trusted", "4.8/5 on Trustpilot", "Great educational content", "Scaling plan up to $2M"],
+    cons: ["Higher challenge cost", "Stricter rules on some strategies"],
+    
+    userReviews: [
+      { name: "John D.", rating: 5, comment: "FTMO is the gold standard. Professional, reliable, and their platform is top-notch." },
+      { name: "Emily C.", rating: 4, comment: "A bit pricey but you get what you pay for. The support and community are worth it." }
+    ],
+    
+    cta: {
+      text: "Join FTMO Now",
+      link: "#"
+    },
+    buyLink: "https://ftmo.com/",
+    reviewLink: "/reviews/ftmo",
+    
+    pageData: {
+      separator: {
+        icon: "🏆",
+        text: "Most Trusted Brand"
+      },
+      recommendations: ["Reputable & Trusted", "Free Trial Account", "Excellent Support", "Great community"],
+      freeRetry: false,
+      bonus: "Free Trial Account",
+      discountCode: "N/A",
+      discount: "N/A"
+    }
+  },
+
+  {
+    id: "funding-traders",
+    name: "Funding Traders",
+    slug: "funding-traders",
+    logo: "/firmlogos/fundingtraders.png",
+    rating: 4.5,
+    reviews: 2560,
+    
+    basicInfo: {
+      type: "Forex Prop Firm",
+      tag: "🚀 High Payout",
+      challengeCost: "$109",
+      profitTarget: "8%",
+      payoutSplit: "95%",
+      steps: "2-Step Challenge",
+      timeLimit: "No Limit"
+    },
+    
+    challenge: {
+      type: "2-Step",
+      minDays: "0 days",
+      maxDailyDrawdown: "5%",
+      maxOverallDrawdown: "8%",
+      profitTarget: "8% / 5%",
+      timeDuration: "No limit",
+      refund: "Yes, on first payout"
+    },
+    
+    drawdown: {
+      daily: "5%",
+      max: "8%"
+    },
+    
+    // No offers mentioned by client for Funding Traders
+    
+    features: ["Weekend Trading Allowed", "News Trading Allowed", "Up to 95% Profit Share", "Aggressive Trading Friendly"],
+    highlights: [
+      "Up to 95% profit split",
+      "News & weekend trading allowed",
+      "Great challenge price",
+      "Good for aggressive traders"
+    ],
+    
+    pros: ["Industry-leading 95% payout", "Weekend/news trading allowed", "Great challenge price", "Perfect for aggressive traders"],
+    cons: ["Founded in 2023 (newer firm)", "Limited educational resources"],
+    
+    userReviews: [
+      { name: "Alex M.", rating: 5, comment: "95% profit split is unbeatable! Weekend trading is a huge plus for my strategy." },
+      { name: "Sarah P.", rating: 4, comment: "Great for aggressive traders. News trading allowed makes it very flexible." }
+    ],
+    
+    cta: {
+      text: "Get Funded Today",
+      link: "#"
+    },
+    buyLink: "https://fundingtraders.com/",
+    reviewLink: "/reviews/funding-traders",
+    
+    pageData: {
+      badge: "Weekend Trading",
+      discountCode: "N/A",
+      discountLabel: "N/A",
+      separator: {
+        icon: "🚀",
+        text: "Highest Payout Split"
+      },
+      recommendations: ["95% payout", "Weekend trading", "News trading", "Aggressive trading friendly"],
+      freeRetry: true,
+      bonus: "Weekend & News Trading Allowed",
+      discount: "N/A"
+    }
+  },
+
+  
 
   {
     id: "blue-guardian",
@@ -418,9 +412,7 @@ export const firms = [
       max: "10%"
     },
     
-    offers: [
-      { discount: "10% OFF", extra: "COMMUNITY CHOICE", code: "GUARDIAN10", buyLink: "#" }
-    ],
+    // No offers mentioned by client for Blue Guardian
     
     features: ["Community Trusted", "Active Support", "Social Media Presence", "Discord Community"],
     highlights: [
@@ -447,8 +439,8 @@ export const firms = [
     
     pageData: {
       badge: "Community Trusted",
-      discountCode: "GUARDIAN10",
-      discountLabel: "10% OFF Community Choice",
+      discountCode: "N/A",
+      discountLabel: "N/A",
       separator: {
         icon: "💼",
         text: "Community Choice"
@@ -456,7 +448,7 @@ export const firms = [
       recommendations: ["Community trusted", "Active support", "Social media presence", "Discord community"],
       freeRetry: true,
       bonus: "Community Trusted Choice",
-      discount: "10% OFF"
+      discount: "N/A"
     }
   }
 ];
@@ -572,7 +564,9 @@ export const getReviewFirmsData = () => {
         userReviews: firm.userReviews,
         ctaLink: firm.cta?.link || "#",
         recommendations: firm.pageData?.recommendations,
-        challenge: firm.challenge
+        challenge: firm.challenge,
+        buylink: firm.buyLink
+
       };
     });
   
@@ -598,7 +592,6 @@ export const getCheapestFirms = () => {
 // Hero Section - Top 7 Most Trusted
 export const getHeroTopFirms = () => {
   return firms
-    .filter(firm => firm.pageData?.discount !== undefined)
     .slice(0, 7)
     .map(firm => ({
       name: firm.name.includes(" ") ? firm.name.split(" ") : [firm.name],
@@ -607,7 +600,7 @@ export const getHeroTopFirms = () => {
       logo: firm.logo,
       score: firm.rating,
       users: firm.reviews,
-      discount: firm.pageData.discount,
+      discount: firm.pageData?.discount === "N/A" ? "View Details" : firm.pageData?.discount || "View Details",
       buyLink: firm.buyLink
     }));
 };

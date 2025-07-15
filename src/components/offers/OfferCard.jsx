@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { CopyCodeButton } from '@/components/offers/CopyCodeButton';
 import { toast } from '@/components/ui/use-toast';
-import { InfoTooltip } from '@/components/ui/InfoTooltip';
+import { InfoTooltip } from '@/components/ui/tooltip';
 
 const OfferCard = ({
     firmName,
@@ -29,17 +29,17 @@ const OfferCard = ({
         <div className="p-6 md:p-8 bg-[#101827] hover:bg-[#131c2f] transition-colors duration-200 rounded-xl">
             {/* Mobile Layout */}
             <div className="block md:hidden">
-                {/* Top Row: Company Info (left) + Discount Badge (right) */}
-                <div className="flex items-start justify-between gap-4 mb-4">
-                    {/* Company Info */}
-                    <div className="flex items-center gap-3 flex-1 min-w-0">
-                        <div className="relative">
-                            <div className="w-16 h-16 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
-                                <img src={logo} alt="Logo" className="w-16 h-16 rounded-lg object-contain" />
+                {/* Top Row: Company Info and Rating */}
+                <div className="mb-4">
+                    {/* Company Info Row */}
+                    <div className="flex items-center gap-3 mb-3">
+                        <div className="relative flex-shrink-0">
+                            <div className="w-14 h-14 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
+                                <img src={logo} alt="Logo" className="w-14 h-14 rounded-lg object-contain" />
                             </div>
                         </div>
                         <div className="min-w-0 flex-1">
-                            <h3 className="font-semibold text-base leading-tight truncate">{firmName}</h3>
+                            <h3 className="font-semibold text-base leading-tight mb-1 break-words">{firmName}</h3>
                             <div className="flex items-center gap-2 text-sm text-gray-400">
                                 <Star className="w-3 h-3 text-yellow-400 fill-current flex-shrink-0" />
                                 <span>{rating}</span>
@@ -48,14 +48,15 @@ const OfferCard = ({
                         </div>
                     </div>
 
-                    {/* Discount Badge */}
-                    <div className="text-right flex-shrink-0">
-                        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-1.5 px-2.5 rounded-md shadow-md text-sm inline-block">
-                            {offer.discount}
+                    {/* Discount Badge and Extra Offer Row */}
+                    <div className="flex items-start justify-between gap-3">
+                        <div className="flex-shrink-0">
+                            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-1.5 px-2.5 rounded-md shadow-md text-sm inline-block">
+                                {offer.discount}
+                            </div>
                         </div>
                         {offer.extra && (
-                            <div className="flex items-center justify-end gap-1 text-[10px] text-gray-400 mt-2">
-
+                            <div className="flex items-center gap-1 text-[10px] text-gray-400 flex-1 justify-end">
                                 <span>🎁 {offer.extra}</span>
                                 {offer.tooltip && <InfoTooltip content={offer.tooltip} />}
                             </div>

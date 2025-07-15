@@ -96,10 +96,12 @@ const HeroSection = () => {
                     </div>
 
                     {/* Discount */}
-                    <div className="text-center">
-                      <p className="font-bold text-lg text-green-400 mb-1">{firm.discount}</p>
-                      <p className="text-xs text-gray-400">Discount</p>
-                    </div>
+                    {firm.discount !== "View Details" && (
+                      <div className="text-center">
+                        <p className="font-bold text-lg text-green-400 mb-1">{firm.discount}</p>
+                        <p className="text-xs text-gray-400">Discount</p>
+                      </div>
+                    )}
                   </div>
 
                   {/* Action Buttons */}
@@ -154,7 +156,10 @@ const HeroSection = () => {
 
                   {/* Offer */}
                   <div className="flex flex-col items-center space-y-2">
-                    <p className="font-semibold text-lg">{firm.discount}</p>
+                    {firm.discount !== "View Details" && (
+  <p className="font-semibold text-lg">{firm.discount}</p>
+)}
+
                     <Button size="sm" className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white text-xs w-28">
                       TRUSTED
                     </Button>
