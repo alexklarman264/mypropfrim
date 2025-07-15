@@ -26,11 +26,11 @@ const Footer = () => {
       { name: "Disclaimer", path: "/disclaimer" }
   ];
   const importantLinks = [
-      { name: "Payout Assurance", path: "#" },
-      { name: "Affiliate Program", path: "#" },
-      { name: "How It Works", path: "/how-it-works" },
-      { name: "Trust Points", path: "#" },
-      { name: "PropTech", path: "#" }
+      // { name: "Payout Assurance", path: "#" },
+      // { name: "Affiliate Program", path: "#" },
+      { name: "How It Works", path: "/how-it-works" }
+      // { name: "Trust Points", path: "#" },
+      // { name: "PropTech", path: "#" }
   ];
 
   return (
