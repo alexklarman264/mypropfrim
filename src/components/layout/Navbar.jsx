@@ -62,13 +62,31 @@ const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <Link to="/" className="flex-shrink-0">
-              <span className="text-xl lg:text-2xl tracking-wider uppercase text-white">
-                <span className="font-light">My</span>{' '}
-                <span className="font-bold">Trusted</span>{' '}
-                <span className="font-semibold">Prop</span>
-              </span>
-            </Link>
+            <Link to="/" className="flex-shrink-0 group">
+            <div className="flex items-center gap-3">
+                {/* Geometric Icon */}
+                <div className="relative w-8 h-8 lg:w-9 lg:h-9">
+                    <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 transform rotate-45 group-hover:rotate-[50deg] transition-transform duration-300"></div>
+                    <div className="absolute inset-1 rounded-md bg-gray-900 transform rotate-45"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-blue-400 group-hover:bg-blue-300 transition-colors duration-300"></div>
+                    </div>
+                </div>
+
+                {/* Clean Typography */}
+                <div className="flex items-center space-x-1">
+                    <span className="text-lg lg:text-xl xl:text-2xl font-light text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                        My
+                    </span>
+                    <span className="text-lg lg:text-xl xl:text-2xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors duration-300">
+                        Trusted
+                    </span>
+                    <span className="text-lg lg:text-xl xl:text-2xl font-medium text-white group-hover:text-blue-50 transition-colors duration-300">
+                        Prop
+                    </span>
+                </div>
+            </div>
+        </Link>
 
             <div className="hidden lg:flex items-center space-x-8">
               {navLinks.map((link) => (
