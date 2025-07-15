@@ -25,7 +25,7 @@ const EasiestFirmsPage = () => {
     return (
         <>
             <Helmet>
-                <title>Easiest Prop Firms to Pass in 2025 | My Prop Firm</title>
+                <title>Easiest Prop Firms to Pass in 2025 | My Trusted Prop</title>
                 <meta name="description" content="Beginner-friendly prop firm challenges with low profit targets, no daily drawdowns, and quick payouts." />
             </Helmet>
             <div className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">

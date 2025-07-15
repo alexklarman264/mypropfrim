@@ -153,7 +153,7 @@ const CompareFirmsPage = () => {
     return (
         <>
             <Helmet>
-                <title>Compare Top Prop Trading Firms | My Prop Firm</title>
+                <title>Compare Top Prop Trading Firms | My Trusted Prop</title>
                 <meta name="description" content="Quickly compare payout splits, challenge rules, costs, bonuses, and more across leading prop firms." />
             </Helmet>
             <div className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">

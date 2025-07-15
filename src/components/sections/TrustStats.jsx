@@ -25,7 +25,7 @@ const TrustStats = () => {
           </h2>
           <div className="inline-block mt-2">
             <h2 className="text-3xl lg:text-5xl font-bold bg-[#19224d] text-white px-6 py-2 rounded-lg">
-              My Prop Firm
+              My Trusted Prop
             </h2>
           </div>
         </motion.div>

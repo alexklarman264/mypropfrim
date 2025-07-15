@@ -74,7 +74,7 @@ const PlatformFeatures = () => {
                 >
                     <h2 className="text-3xl lg:text-4xl font-bold">Your #1 Platform for Prop Firm Comparisons, Discounts & Reviews</h2>
                     <p className="mt-4 text-lg text-gray-400">
-                        At My Prop Firm, we make it easier for traders to find, compare, and choose the best proprietary trading firms. Whether you’re looking for discounts, cashback offers, or side-by-side in-depth prop firm comparisons, we’ve got you covered.
+                        At My Trusted Prop, we make it easier for traders to find, compare, and choose the best proprietary trading firms. Whether you’re looking for discounts, cashback offers, or side-by-side in-depth prop firm comparisons, we’ve got you covered.
                     </p>
                 </motion.div>
 
@@ -97,9 +97,9 @@ const PlatformFeatures = () => {
                                     <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex items-center space-x-2">
 
                                         <div className="w-8 h-8 bg-[#1D4ED8] rounded-sm flex items-center justify-center">
-                                            <p className="text-white text-sm font-bold">MPF</p>
+                                            <p className="text-white text-sm font-bold">MTP</p>
                                         </div>
-                                        <span className="text-white font-medium text-sm">My Prop Firm</span>
+                                        <span className="text-white font-medium text-sm">My Trusted Prop</span>
                                     </div>
 
                                     {/* Badge Image */}

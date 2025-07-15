@@ -11,7 +11,7 @@ const BestOffersPage = () => {
     return (
         <>
             <Helmet>
-                <title>Best Prop Firm Discount Codes | My Prop Firm</title>
+                <title>Best Prop Firm Discount Codes | My Trusted Prop</title>
                 <meta name="description" content="Verified discount offers from top prop firms. Use our exclusive codes to save instantly on your trading challenges and get funded." />
             </Helmet>
             <div className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">

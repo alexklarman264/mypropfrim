@@ -7,8 +7,8 @@ const PlaceholderPage = ({ title }) => {
     return (
         <>
             <Helmet>
-                <title>{title} | My Prop Firm</title>
-                <meta name="description" content={`Find information about ${title} on My Prop Firm.`} />
+                <title>{title} | My Trusted Prop</title>
+                <meta name="description" content={`Find information about ${title} on My Trusted Prop.`} />
             </Helmet>
             <div className="flex flex-col items-center justify-center min-h-[calc(100vh-8rem)] text-center px-4">
                 <motion.div

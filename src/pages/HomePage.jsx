@@ -11,7 +11,7 @@ function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Find the Best Prop Trading Firms in 2025 | My Prop Firm</title>
+        <title>Find the Best Prop Trading Firms in 2025 | My Trusted Prop</title>
         <meta name="description" content="Compare and find the most trusted prop trading firms. Verified reviews, best offers, and exclusive discounts. Join 300K+ monthly visitors finding their perfect prop firm." />
       </Helmet>
       <HeroSection />
