@@ -65,8 +65,8 @@ const Navbar = () => {
             <Link to="/" className="flex-shrink-0">
               <span className="text-xl lg:text-2xl tracking-wider uppercase text-white">
                 <span className="font-light">My</span>{' '}
-                <span className="font-bold">Prop</span>{' '}
-                <span className="font-semibold">Firm</span>
+                <span className="font-bold">Trusted</span>{' '}
+                <span className="font-semibold">Prop</span>
               </span>
             </Link>
 
