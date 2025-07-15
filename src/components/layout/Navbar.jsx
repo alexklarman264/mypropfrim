@@ -64,9 +64,9 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             <Link to="/" className="flex-shrink-0">
               <span className="text-xl lg:text-2xl tracking-wider uppercase text-white">
-                <span className="font-light">The</span>{' '}
-                <span className="font-bold">Trusted</span>{' '}
-                <span className="font-semibold">Prop</span>
+                <span className="font-light">My</span>{' '}
+                <span className="font-bold">Prop</span>{' '}
+                <span className="font-semibold">Firm</span>
               </span>
             </Link>
 
@@ -110,9 +110,9 @@ const Navbar = () => {
               <div className="flex items-center justify-between h-20 px-4 sm:px-6">
                  <Link to="/" className="flex-shrink-0">
                     <span className="text-xl lg:text-2xl tracking-wider uppercase text-white">
-                        <span className="font-light">The</span>{' '}
-                        <span className="font-bold">Trusted</span>{' '}
-                        <span className="font-semibold">Prop</span>
+                        <span className="font-light">My</span>{' '}
+                        <span className="font-bold">Prop</span>{' '}
+                        <span className="font-semibold">Firm</span>
                     </span>
                 </Link>
                 <button

@@ -8,7 +8,7 @@ const legalContent = {
         content: [
             {
                 heading: "Introduction",
-                text: "Welcome to The Trusted Prop. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website."
+                text: "Welcome to My Prop Firm. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website."
             },
             {
                 heading: "Information We Collect",
@@ -50,7 +50,7 @@ const legalContent = {
             },
             {
                 heading: "Intellectual Property Rights",
-                text: "The content on our website, including text, graphics, logos, and images, is the property of The Trusted Prop and is protected by copyright and other intellectual property laws."
+                text: "The content on our website, including text, graphics, logos, and images, is the property of My Prop Firm and is protected by copyright and other intellectual property laws."
             },
             {
                 heading: "User Responsibilities",
@@ -58,7 +58,7 @@ const legalContent = {
             },
             {
                 heading: "Limitation of Liability",
-                text: "The Trusted Prop will not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use our website."
+                text: "My Prop Firm will not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use our website."
             }
         ]
     },
@@ -67,7 +67,7 @@ const legalContent = {
         content: [
             {
                 heading: "No Financial Advice",
-                text: "The information provided on The Trusted Prop is for educational and informational purposes only. It is not intended as, and shall not be understood or construed as, financial advice. We are not attorneys, accountants, or financial advisors, nor are we holding ourselves out to be."
+                text: "The information provided on My Prop Firm is for educational and informational purposes only. It is not intended as, and shall not be understood or construed as, financial advice. We are not attorneys, accountants, or financial advisors, nor are we holding ourselves out to be."
             },
             {
                 heading: "Affiliate Disclosure",
@@ -84,11 +84,11 @@ const legalContent = {
         content: [
             {
                 heading: "1. Acceptance of Terms",
-                text: "By accessing and using The Trusted Prop, you accept and agree to be bound by the terms and provision of this agreement. In addition, when using this website's particular services, you shall be subject to any posted guidelines or rules applicable to such services."
+                text: "By accessing and using My Prop Firm, you accept and agree to be bound by the terms and provision of this agreement. In addition, when using this website's particular services, you shall be subject to any posted guidelines or rules applicable to such services."
             },
             {
                 heading: "2. Description of Service",
-                text: "The Trusted Prop provides users with access to a rich collection of resources, including but not limited to, prop firm reviews, comparison tools, and educational content. You understand and agree that the Service is provided 'AS-IS' and that The Trusted Prop assumes no responsibility for the timeliness, deletion, mis-delivery or failure to store any user communications or personalization settings."
+                text: "My Prop Firm provides users with access to a rich collection of resources, including but not limited to, prop firm reviews, comparison tools, and educational content. You understand and agree that the Service is provided 'AS-IS' and that My Prop Firm assumes no responsibility for the timeliness, deletion, mis-delivery or failure to store any user communications or personalization settings."
             },
             {
                 heading: "3. User Conduct",
@@ -121,8 +121,8 @@ const LegalPage = ({ page }) => {
     return (
         <>
             <Helmet>
-                <title>{title} | The Trusted Prop</title>
-                <meta name="description" content={`Read the ${title} of The Trusted Prop.`} />
+                <title>{title} | My Prop Firm</title>
+                <meta name="description" content={`Read the ${title} of My Prop Firm.`} />
             </Helmet>
             <div className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-[#0A0A0A]">
                 <div className="max-w-4xl mx-auto">

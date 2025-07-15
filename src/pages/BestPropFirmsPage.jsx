@@ -12,7 +12,7 @@ const BestPropFirmsPage = () => {
     return (
         <>
             <Helmet>
-                <title>Top 3 Prop Trading Firms of 2025 | The Trusted Prop</title>
+                <title>Top 3 Prop Trading Firms of 2025 | My Prop Firm</title>
                 <meta name="description" content="Hand-picked highest-converting and most trusted prop firms based on results, payout conditions, and performance." />
             </Helmet>
             <div className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">

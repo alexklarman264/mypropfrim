@@ -75,7 +75,7 @@ const Footer = () => {
           <div className="space-y-4">
             <p className="text-lg font-semibold">Contact</p>
             <p className="text-[#B0B0B0] hover:text-[#4A6CF7] cursor-pointer transition-colors" onClick={showComingSoon}>
-              support@thetrustedprop.com
+              support@mypropfirm.com
             </p>
           </div>
 
@@ -104,7 +104,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-800">
           <p className="text-sm text-[#B0B0B0] leading-relaxed">
-            <strong>Disclaimer:</strong> The Trusted Prop is not a financial advisor and does not provide investment advice. 
+            <strong>Disclaimer:</strong> My Prop Firm is not a financial advisor and does not provide investment advice. 
             All information on this website is for educational purposes only. Trading involves substantial risk and is not suitable for all investors. 
             Past performance does not guarantee future results. This company is registered in the UAE and operates under UAE jurisdiction.
           </p>
@@ -118,7 +118,7 @@ const Footer = () => {
             <span>|</span>
             <span className="hover:text-[#4A6CF7] cursor-pointer transition-colors" onClick={showComingSoon}>Sitemap</span>
           </div>
-          <p className="text-sm text-white">© 2025 The Trusted Prop</p>
+          <p className="text-sm text-white">© 2025 My Prop Firm</p>
         </div>
       </div>
     </footer>

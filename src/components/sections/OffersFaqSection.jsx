@@ -14,7 +14,7 @@ const faqData = [
   },
   {
     question: "Are these coupon codes verified?",
-    answer: "Yes, every single coupon code on The Trusted Prop is manually verified by our team. We guarantee that our codes are active and ready to use."
+    answer: "Yes, every single coupon code on My Prop Firm is manually verified by our team. We guarantee that our codes are active and ready to use."
   },
   {
     question: "Is it possible to use more than one discount at the same time?",
@@ -37,8 +37,8 @@ const faqData = [
     answer: "Many of our discount codes apply to both evaluation and instant funding accounts. Check the details of each offer, as some may be specific to a certain account type."
   },
   {
-    question: "What is The Trusted Prop?",
-    answer: "The Trusted Prop is your #1 resource for prop firm comparisons, verified reviews, and exclusive discounts. Our mission is to help traders find the best firms and save money."
+    question: "What is My Prop Firm?",
+    answer: "My Prop Firm is your #1 resource for prop firm comparisons, verified reviews, and exclusive discounts. Our mission is to help traders find the best firms and save money."
   }
 ];
 

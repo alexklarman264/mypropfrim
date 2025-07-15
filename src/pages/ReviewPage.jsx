@@ -46,7 +46,7 @@ const ReviewPage = () => {
     return (
         <>
             <Helmet>
-                <title>{firm.name} Review | The Trusted Prop</title>
+                <title>{firm.name} Review | My Prop Firm</title>
                 <meta name="description" content={`A detailed breakdown of challenges, rules, trust score, and real user experiences with ${firm.name}.`} />
                 <meta property="og:title" content={`${firm.name} Review`} />
                 <meta property="og:description" content={`Is ${firm.name} the right prop firm for you? Read our in-depth review.`} />

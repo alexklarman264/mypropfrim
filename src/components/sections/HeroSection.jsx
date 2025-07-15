@@ -26,7 +26,7 @@ const HeroSection = () => {
         >
           <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight">
             Find the Best Prop Trading Firms in 2025:{' '}
-            <span className="gradient-text">Verified by The Trusted Prop</span>
+            <span className="gradient-text">Verified by My Prop Firm</span>
           </h1>
           
           <p className="mt-6 text-lg text-[#B0B0B0] leading-relaxed">

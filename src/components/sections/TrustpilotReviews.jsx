@@ -6,7 +6,7 @@ const TrustpilotReviews = () => {
   {
     name: 'Samantha L.',
     title: 'Surprisingly Detailed and Honest',
-    text: 'I’ve visited a lot of review sites, but The Trusted Prop actually gives you everything in one place—fees, rules, and pros & cons. It helped me avoid a firm with hidden costs.',
+    text: 'I’ve visited a lot of review sites, but My Prop Firm actually gives you everything in one place—fees, rules, and pros & cons. It helped me avoid a firm with hidden costs.',
     time: '1 week ago'
   },
   {
@@ -49,7 +49,7 @@ const TrustpilotReviews = () => {
                 >
                     <h2 className="text-3xl lg:text-4xl font-bold">TrustPilot Review</h2>
                     <p className="mt-4 text-base md:text-lg text-gray-400">
-                        Don't trust our words. See what our users say about The Trusted Prop
+                        Don't trust our words. See what our users say about My Prop Firm
                     </p>
                 </motion.div>
 
