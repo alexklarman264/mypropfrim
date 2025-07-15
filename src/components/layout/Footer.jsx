@@ -37,7 +37,7 @@ const Footer = () => {
     <footer className="bg-gray-900 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
-          <div className="lg:col-span-2 space-y-6">
+          {/* <div className="lg:col-span-2 space-y-6">
             <div>
               <p className="text-lg font-semibold mb-4">Stay Updated</p>
               <div className="space-y-3">
@@ -70,7 +70,7 @@ const Footer = () => {
                 <social.icon key={index} className="w-6 h-6 text-[#B0B0B0] hover:text-[#4A6CF7] cursor-pointer transition-colors" onClick={showComingSoon} />
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div className="space-y-4">
             <p className="text-lg font-semibold">Contact</p>
