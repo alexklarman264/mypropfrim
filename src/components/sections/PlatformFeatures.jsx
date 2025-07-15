@@ -97,7 +97,7 @@ const PlatformFeatures = () => {
                                     <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex items-center space-x-2">
 
                                         <div className="w-8 h-8 bg-[#1D4ED8] rounded-sm flex items-center justify-center">
-                                            <p className="text-white text-sm font-bold">TTP</p>
+                                            <p className="text-white text-sm font-bold">MPF</p>
                                         </div>
                                         <span className="text-white font-medium text-sm">My Prop Firm</span>
                                     </div>
