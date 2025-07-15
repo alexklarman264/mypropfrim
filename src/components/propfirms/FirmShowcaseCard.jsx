@@ -46,7 +46,7 @@ const FirmShowcaseCard = ({ firm, logo, rating, reviews, highlights, cta, review
                 <div className="flex flex-col sm:flex-row items-center gap-4">
                      <Button 
                         size="lg" 
-                        className="w-full sm:w-auto bg-gradient-to-r from-green-500 to-teal-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-green-500/40 transform hover:scale-105 transition-all duration-300"
+                        className="w-full sm:w-auto bg-gradient-to-r from-green-500 to-teal-500 text-white font-bold text-base rounded-full shadow-lg hover:shadow-green-500/40 transform hover:scale-105 transition-all duration-300"
                         onClick={() => window.open(buylink, '_blank')}
                     >
                         {cta.text}
