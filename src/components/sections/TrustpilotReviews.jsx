@@ -68,7 +68,7 @@ const TrustpilotReviews = () => {
                                     <div className="flex items-center justify-between mb-4">
                                         {/* Star rating display */}
                                         <img
-                                            src="../../../public/trustpilot/stars.png"
+                                            src="/trustpilot/stars.png"
                                             alt="5 stars"
                                             className="h-6 object-contain"
                                         />
