@@ -44,7 +44,7 @@ const EasiestFirmsPage = () => {
                         </p>
                     </motion.div>
 
-                    <motion.div 
+                    {/* <motion.div 
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
@@ -60,7 +60,7 @@ const EasiestFirmsPage = () => {
                                 {filter}
                             </Button>
                         ))}
-                    </motion.div>
+                    </motion.div> */}
 
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                         {filteredFirms.map((firm, index) => (
