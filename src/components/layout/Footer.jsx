@@ -115,8 +115,8 @@ const Footer = () => {
             <Link to="/terms-of-service" className="hover:text-[#4A6CF7] cursor-pointer transition-colors">Terms of Service</Link>
             <span>|</span>
             <Link to="/privacy-policy" className="hover:text-[#4A6CF7] cursor-pointer transition-colors">Privacy Policy</Link>
-            <span>|</span>
-            <span className="hover:text-[#4A6CF7] cursor-pointer transition-colors" onClick={showComingSoon}>Sitemap</span>
+            {/* <span>|</span>
+            <span className="hover:text-[#4A6CF7] cursor-pointer transition-colors" onClick={showComingSoon}>Sitemap</span> */}
           </div>
           <p className="text-sm text-white">© 2025 My Trusted Prop</p>
         </div>
