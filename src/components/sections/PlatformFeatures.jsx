@@ -94,13 +94,29 @@ const PlatformFeatures = () => {
                                     <div className="w-full h-full rounded-3xl flex flex-col items-center justify-center text-center shadow-2xl p-8 relative bg-gradient-radial from-[#0F172A] via-[#0F172A] to-[#020617]">
 
                                     {/* Logo + Brand Name */}
-                                    <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex items-center space-x-2">
+                                    <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex items-center space-x-3">
+    {/* Geometric Icon - Same as MinimalLogo */}
+    <div className="relative w-8 h-8">
+        <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 transform rotate-45"></div>
+        <div className="absolute inset-1 rounded-md bg-gray-900 transform rotate-45"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-3 h-3 rounded-full bg-blue-400"></div>
+        </div>
+    </div>
 
-                                        <div className="w-8 h-8 bg-[#1D4ED8] rounded-sm flex items-center justify-center">
-                                            <p className="text-white text-sm font-bold">MTP</p>
-                                        </div>
-                                        <span className="text-white font-medium text-sm">My Trusted Prop</span>
-                                    </div>
+    {/* Clean Typography - Same as MinimalLogo */}
+    <div className="flex items-center space-x-1">
+        <span className="text-sm font-light text-gray-400">
+            My
+        </span>
+        <span className="text-sm font-bold text-blue-400">
+            Trusted
+        </span>
+        <span className="text-sm font-medium text-white">
+            Prop
+        </span>
+    </div>
+</div>
 
                                     {/* Badge Image */}
                                     <img
