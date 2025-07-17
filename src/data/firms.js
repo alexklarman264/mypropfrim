@@ -60,7 +60,7 @@ export const firms = [
       text: "Use Code & Start Challenge",
       link: "#"
     },
-    buyLink: "https://plutustradebase.com/",
+    buyLink: "https://dashboard.plutustradebase.com/challenges?affiliateId=Fundme",
     reviewLink: "/reviews/plutus-tradebase",
     
     pageData: {
@@ -138,7 +138,7 @@ export const firms = [
       text: "Use Code & Start Now",
       link: "#"
     },
-    buyLink: "https://blueberryfunded.com/",
+    buyLink: "https://blueberryfunded.com/?utm_source=affiliate&ref=4487",
     reviewLink: "/reviews/blueberry-funded",
     
     pageData: {
@@ -168,7 +168,7 @@ export const firms = [
     
     basicInfo: {
       type: "Instant Prop Firm",
-      tag: "🔥 Editor's Choice",
+      tag: "🔥 Community Trusted",
       challengeCost: "$139",
       profitTarget: "8%",
       payoutSplit: "90%",
@@ -214,11 +214,11 @@ export const firms = [
       text: "Start Trading with Fxify",
       link: "#"
     },
-    buyLink: "https://fxify.com/",
+    buyLink: "https://trader.fxify.com/purchasechallenge?affiliateId=6436",
     reviewLink: "/reviews/fxify",
     
     pageData: {
-      badge: "Editor's Choice",
+      badge: "Community Trusted",
       discountCode: "N/A",
       discountLabel: "N/A",
       separator: {
@@ -288,7 +288,7 @@ export const firms = [
       text: "Join FTMO Now",
       link: "#"
     },
-    buyLink: "https://ftmo.com/",
+    buyLink: "https://trader.ftmo.com/?affiliates=cLugJeuAkEHpYfpxGEvx",
     reviewLink: "/reviews/ftmo",
     
     pageData: {
@@ -359,7 +359,7 @@ export const firms = [
       text: "Get Funded Today",
       link: "#"
     },
-    buyLink: "https://fundingtraders.com/",
+    buyLink: "https://app.fundingtraders.com/login?ref=zrd6899707",
     reviewLink: "/reviews/funding-traders",
     
     pageData: {
@@ -434,7 +434,7 @@ export const firms = [
       text: "Join Blue Guardian",
       link: "#"
     },
-    buyLink: "https://blueguardian.com/",
+    buyLink: "https://checkout.blueguardian.com/ref/72705/",
     reviewLink: "/reviews/blue-guardian",
     
     pageData: {
@@ -589,7 +589,6 @@ export const getCheapestFirms = () => {
     .sort((a, b) => a.discountedPrice - b.discountedPrice);
 };
 
-// Hero Section - Top 7 Most Trusted
 export const getHeroTopFirms = () => {
   return firms
     .slice(0, 7)
@@ -601,6 +600,7 @@ export const getHeroTopFirms = () => {
       score: firm.rating,
       users: firm.reviews,
       discount: firm.pageData?.discount === "N/A" ? "View Details" : firm.pageData?.discount || "View Details",
+      discountCode: firm.pageData?.discountCode || firm.discountCode || "N/A", // Add this line
       buyLink: firm.buyLink
     }));
 };

@@ -32,7 +32,7 @@ const EasiestFirmCard = ({ firm, index }) => {
                 <div className="relative mb-4">
                     {/* Top-left Badge */}
                     {badge && (
-                        <Badge className="absolute -top-6 -right-2 bg-green-600/20 text-green-300 border-green-500/30 text-[11px] sm:text-xs px-2 py-1 rounded shadow-md">
+                        <Badge className="absolute -top-6 -right-5 bg-green-600/20 text-green-300 border-green-500/30 text-[11px] sm:text-xs px-2 py-1 rounded shadow-md">
                             {badge}
                         </Badge>
                     )}

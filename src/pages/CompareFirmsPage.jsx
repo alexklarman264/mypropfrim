@@ -34,7 +34,7 @@ const FirmSelector = ({ selectedFirms, setSelectedFirms, allFirmsData }) => {
     const handleSelect = (slug) => {
         if (selectedFirms.includes(slug)) {
             setSelectedFirms(selectedFirms.filter(s => s !== slug));
-        } else if (selectedFirms.length < 5) {
+        } else if (selectedFirms.length < 6) {
             setSelectedFirms([...selectedFirms, slug]);
         } else {
             toast({

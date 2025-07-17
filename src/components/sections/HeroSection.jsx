@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Search, Star, Heart, CheckCircle2 } from 'lucide-react';
+import { Search, Star, Heart, CheckCircle2, Tag, Copy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import { toast } from '@/components/ui/use-toast';
 import { getHeroTopFirms } from '@/data/firms';
 import { Link } from 'react-router-dom';
@@ -14,7 +15,10 @@ const HeroSection = () => {
     });
   };
 
-
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text);
+    toast({ title: "Copied!", description: `${text} copied to clipboard.` });
+  };
 
   return (
     <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
@@ -42,7 +46,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-16 max-w-5xl mx-auto"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8">Top 7 Most Trusted Prop Firms</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8">Top 6 Most Trusted Prop Firms</h2>
 
           <div className="flex flex-col space-y-4">
             {topFirms.slice(0, 7).map((firm, index) => (
@@ -57,7 +61,7 @@ const HeroSection = () => {
                   </div>
 
                   {/* Firm Info Row */}
-                  <div className="flex items-start space-x-4 mb-8 pt-2">
+                  <div className="flex items-start space-x-4 mb-4 pt-2">
                     <div className="relative">
                       <div className="w-16 h-16 rounded-lg flex items-center justify-center ring-2 ring-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.7)]">
                         <img src={firm.logo} alt="Logo" className="w-16 h-16 rounded-lg object-contain" />
@@ -74,6 +78,21 @@ const HeroSection = () => {
                       </span>
                     </div>
                   </div>
+
+                  {/* Discount Code - Mobile (under trusted) */}
+                  {(firm.discountCode || firm.couponCode || firm.promoCode) && 
+                   (firm.discountCode !== 'N/A' && firm.couponCode !== 'N/A' && firm.promoCode !== 'N/A') && (
+                    <div className="flex items-center justify-end gap-2 mb-4 ">
+                      <Badge variant="secondary" className="text-sm bg-green-900/20 text-green-400 border-2 border-dashed border-green-400/50">
+                        <Tag className="w-4 h-4 mr-1" />
+                        {firm.discountCode || firm.couponCode || firm.promoCode}
+                      </Badge>
+                      <Copy 
+                        className="w-5 h-5 cursor-pointer hover:text-blue-400 text-gray-400" 
+                        onClick={() => copyToClipboard(firm.discountCode || firm.couponCode || firm.promoCode)} 
+                      />
+                    </div>
+                  )}
 
                   {/* Stats Grid - 3 columns 1 row */}
                   <div className="grid grid-cols-3 gap-4 mb-4">
@@ -154,15 +173,30 @@ const HeroSection = () => {
                     <p className="text-xs text-gray-500">users</p>
                   </div>
 
-                  {/* Offer */}
+                  {/* Offer/Discount Code Section - Desktop */}
                   <div className="flex flex-col items-center space-y-2">
                     {firm.discount !== "View Details" && (
-  <p className="font-semibold text-lg">{firm.discount}</p>
-)}
+                      <p className="font-semibold text-lg">{firm.discount}</p>
+                    )}
 
-                    <Button size="sm" className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white text-xs w-28">
-                      TRUSTED
-                    </Button>
+                    {/* Show discount code instead of TRUSTED button on desktop */}
+                    {(firm.discountCode || firm.couponCode || firm.promoCode) && 
+                     (firm.discountCode !== 'N/A' && firm.couponCode !== 'N/A' && firm.promoCode !== 'N/A') ? (
+                      <div className="flex items-center gap-2">
+                        <Badge variant="secondary" className="text-xs bg-green-900/20 text-green-400 border-green-500/30">
+                          <Tag className="w-3 h-3 mr-1" />
+                          {firm.discountCode || firm.couponCode || firm.promoCode}
+                        </Badge>
+                        <Copy 
+                          className="w-3 h-3 cursor-pointer hover:text-blue-400 text-gray-400" 
+                          onClick={() => copyToClipboard(firm.discountCode || firm.couponCode || firm.promoCode)} 
+                        />
+                      </div>
+                    ) : (
+                      <Button size="sm" className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white text-xs w-28">
+                        TRUSTED
+                      </Button>
+                    )}
                   </div>
 
                   {/* Action Buttons */}
